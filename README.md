@@ -1,4 +1,4 @@
-# 📈 Stock Market Analysis — End-to-End Data Analyst Portfolio Project
+# Stock Market Analysis — End-to-End Data Analyst Portfolio Project
 
 Project analisis pasar saham end-to-end menggunakan **SQL** (data cleaning, window functions, CTE)
 dan **Excel** (dashboard interaktif dengan formula & chart) berdasarkan dataset bergaya
@@ -7,13 +7,13 @@ dan **Excel** (dashboard interaktif dengan formula & chart) berdasarkan dataset 
 > **Catatan:** data pada `data/stock_market_data.csv` adalah **data simulasi (synthetic)** yang
 > meniru struktur & karakteristik dataset Kaggle asli (OHLCV harian, 8 ticker, 1 tahun), dibuat
 > agar seluruh pipeline bisa didemokan end-to-end tanpa bergantung pada file eksternal. Untuk
-> versi produksi, cukup ganti file CSV ini dengan hasil download dataset asli dari Kaggle —
+> versi produksi, cukup ganti file CSV ini dengan hasil download dataset asli dari Kaggle
 > struktur kolom (`Ticker, Sector, Date, Open, High, Low, Close, Adj_Close, Volume`) sudah
 > disesuaikan agar kompatibel langsung dengan seluruh script SQL & Excel di project ini.
 
 ---
 
-## 🎯 Business Questions
+## Business Questions
 
 1. Ticker/sektor mana yang paling **volatile** vs paling **stabil**?
 2. Bagaimana tren **return per kuartal**, dan kapan **drawdown terbesar** terjadi?
@@ -21,7 +21,7 @@ dan **Excel** (dashboard interaktif dengan formula & chart) berdasarkan dataset 
 4. Kapan terjadi **lonjakan volume** yang mengindikasikan berita besar / anomali pasar?
 5. Ticker mana yang paling **menguntungkan** secara total return selama periode analisis?
 
-## 🧰 Tools
+## Tools
 
 | Tahap | Tools |
 |---|---|
@@ -30,7 +30,7 @@ dan **Excel** (dashboard interaktif dengan formula & chart) berdasarkan dataset 
 | Visualisasi & dashboard | Microsoft Excel (formula, PivotChart-style, conditional formatting) |
 | Data generation (dataset simulasi) | Python (pandas, numpy) |
 
-## 📁 Struktur Project
+## Struktur Project
 
 ```
 stock-portfolio/
@@ -53,7 +53,7 @@ stock-portfolio/
         └── Volume_Spike   (deteksi anomali volume, hasil query SQL)
 ```
 
-## 🔍 Alur Analisis (End-to-End)
+##  Alur Analisis 
 
 ### 1. Data Cleaning (SQL)
 - Import CSV mentah ke tabel `stock_prices_raw`.
@@ -79,7 +79,7 @@ stock-portfolio/
 - Key insight cards di sheet `Dashboard` otomatis menunjukkan ticker paling volatile/stabil,
   drawdown terdalam, dan return tertinggi menggunakan formula `INDEX/MATCH`.
 
-## 📊 Key Insights (contoh temuan dari data simulasi)
+## Key Insights
 
 - **TSLA** tercatat sebagai ticker paling volatile (volatilitas harian ± 3,5%) sekaligus
   mengalami max drawdown terdalam (~ -59%) — konsisten dengan karakteristik saham growth stock
@@ -95,7 +95,7 @@ stock-portfolio/
 *(Insight di atas otomatis mengikuti data pada sheet `Raw_Data`. Ganti dengan data riil dari
 Kaggle untuk mendapatkan insight yang mencerminkan kondisi pasar sesungguhnya.)*
 
-## ▶️ Cara Menjalankan Ulang Project
+## Cara Menjalankan Ulang Project
 
 1. Download dataset dari Kaggle (atau gunakan `data/stock_market_data.csv` yang sudah tersedia).
 2. Load ke SQLite (atau database lain):
