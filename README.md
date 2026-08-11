@@ -82,7 +82,7 @@ stock-portfolio/
 ## Key Insights
 
 - **TSLA** tercatat sebagai ticker paling volatile (volatilitas harian ± 3,5%) sekaligus
-  mengalami max drawdown terdalam (~ -59%) — konsisten dengan karakteristik saham growth stock
+  mengalami max drawdown terdalam (~ -59%) konsisten dengan karakteristik saham growth stock
   yang sensitif terhadap sentimen pasar.
 - **KO** (Consumer Staples) adalah ticker paling stabil, mencerminkan sifat defensif sektor
   consumer staples yang cenderung tidak terlalu terpengaruh siklus pasar.
@@ -90,7 +90,7 @@ stock-portfolio/
   diamati.
 - Sektor Technology secara umum menunjukkan rata-rata return bulanan yang lebih tinggi
   dibanding sektor defensif (Healthcare, Consumer Staples), namun dengan volatilitas yang
-  juga lebih tinggi — trade-off klasik risk vs return.
+  juga lebih tinggi trade-off klasik risk vs return.
 
 *(Insight di atas otomatis mengikuti data pada sheet `Raw_Data`. Ganti dengan data riil dari
 Kaggle untuk mendapatkan insight yang mencerminkan kondisi pasar sesungguhnya.)*
@@ -112,8 +112,3 @@ Kaggle untuk mendapatkan insight yang mencerminkan kondisi pasar sesungguhnya.)*
 2. Buka `excel/stock_market_dashboard.xlsx` — update sheet `Raw_Data` dengan data terbaru,
    seluruh formula & chart akan otomatis recalculate.
 
-## 👤 Author
-
-Portfolio project ini dibuat untuk menunjukkan kemampuan end-to-end data analyst:
-data cleaning, SQL analytics (window functions & CTE), hingga membangun dashboard Excel
-yang siap dipresentasikan ke stakeholder non-teknis.
