@@ -1,11 +1,4 @@
-/* =========================================================
-   PROJECT   : Stock Market Analysis - Data Analyst Portfolio
-   FILE      : 02_analysis_queries.sql
-   PURPOSE   : Kumpulan query analisis inti untuk menjawab
-               business questions project ini.
-   PREREQ    : Jalankan 01_schema_and_cleaning.sql lebih dulu
-               (butuh tabel `stock_prices`).
-   ========================================================= */
+
 
 
 -- =========================================================
