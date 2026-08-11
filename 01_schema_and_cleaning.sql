@@ -1,12 +1,4 @@
-/* =========================================================
-   PROJECT   : Stock Market Analysis - Data Analyst Portfolio
-   FILE      : 01_schema_and_cleaning.sql
-   PURPOSE   : Membuat tabel utama, memuat data mentah, dan
-               melakukan pembersihan data sebelum dianalisis.
-   DIALECT   : Ditulis untuk SQLite (mudah dijalankan lokal).
-               Kompatibel dengan sedikit penyesuaian ke
-               PostgreSQL / MySQL (lihat catatan di bawah).
-   ========================================================= */
+
 
 -- -------------------------------------------------
 -- 1. TABEL UTAMA (hasil import dari CSV Kaggle)
@@ -93,11 +85,3 @@ SELECT
     (SELECT COUNT(*) FROM stock_prices_raw) AS baris_sebelum,
     (SELECT COUNT(*) FROM stock_prices)     AS baris_sesudah;
 
-/* =========================================================
-   CATATAN PORTING KE POSTGRESQL / MYSQL:
-   - SQLite: DATE(Date) cukup untuk parsing 'YYYY-MM-DD'.
-     PostgreSQL: gunakan TO_DATE(Date, 'YYYY-MM-DD').
-     MySQL: gunakan STR_TO_DATE(Date, '%Y-%m-%d').
-   - SQLite tidak punya tipe DATE native yang strict;
-     PostgreSQL/MySQL sebaiknya definisikan trade_date DATE.
-   ========================================================= */
